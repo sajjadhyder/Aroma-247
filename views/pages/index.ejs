@@ -1,137 +1,145 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <% include ../partials/header.ejs %>
-</head>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+	<!--<![endif]-->
+	<head>
+		<meta charset='utf-8' />
+		<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+		<title>Aroma 24/7 - Coming Soon</title>	
+		
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" href="images/favicon.png" />
+		
+		<link rel="stylesheet" href="/css/maximage.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen" charset="utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Cinzel|Fugaz+One|Raleway:600" rel="stylesheet">
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		
+		<!--[if IE 6]>
+			<style type="text/css" media="screen">
+				.gradient {display:none;}
+			</style>
+		<![endif]-->
+	</head>
+	<body>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+		<!-- Social Links -->
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">Ayiroor- a place of peace and tranquility
-                </a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download">Download</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+		<!-- Switch to full screen -->
+		<button class="full-screen" onclick="$(document).toggleFullScreen()"></button>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">അയിരൂർ<br/>Ayiroor</h1>
-                        <p class="intro-text">A small village in Malappuram District, Kerala, India.
-                            <br>Peace triumphs here</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+		<!-- Site Logo -->
+		<div id="logo">Aroma 24/7</div>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Ayiroor</h2>
-                <p>A small locality with most of the people working abroad. Ayiroor comes under Perumpadappu grama panchayat. Ayiroor is at the border of Malappuram and Thrissur district.</p><p> To reach here there is a bus service from Kunnamkulam to Ponnani via Palapetty or else take a bus to Perumpadappu from Kunnamkulam or to Palapetty from Ponnani or Chavakkad.</p>
-                
-                <p>Some of the landmarks here are <a href="https://www.google.com/maps/place/10%C2%B041'55.3%22N+75%C2%B058'10.3%22E/@10.6986953,75.9689848,19z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d10.698694!4d75.969532?hl=en-US">Kallayil Pidika</a>, <a href="https://goo.gl/maps/bF1xm1hbWwv">Kandu Bazaar</a>, <a href="https://goo.gl/maps/adx12QKXuSP2">Ayiroor Masjid</a></p>
-            </div>
-        </div>
-    </section>
+		<!-- Main Navigation -->
+		<nav class="main-nav">
+			<ul>
+				<li><a href="#home" class="active">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
-            </div>
-        </div>
-    </section>
+		<!-- Slider Controls -->
+		<a href="" id="arrow_left"><img src="/images/arrow-left.png" alt="Slide Left" /></a>
+		<a href="" id="arrow_right"><img src="/images/arrow-right.png" alt="Slide Right" /></a>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+		<!-- Home Page -->
+		<section class="content show para-text" id="home">
+			<h1>Welcome</h1>
+			<h5>Our new site is coming soon!</h5>
+			<p>Aroma 24/7 carefully sources the best quality fragrance ingredients from all around the world.</p>
+			<p><a href="#about">More info &#187;</a></p>
+		</section>
 
-    <!-- Map Section -->
-    <div id="map"></div>
+		<!-- About Page -->
+		<section class="content hide para-text" id="about">
+			<h1>About</h1>
+			<h5>Here's a little about what we're up to.</h5>
+			<p>Discover the world of possibilities with the use of scent. We will take you on a journey through scent marketing, room fragrance sysytems, profesional aroma marketing solutions, personal fragrances, air design, scent diffusers, as well as room air freshners and odor removal technologies.</p>
+			
+		</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Your Website 2016</p>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="/vendor/jquery/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="/js/grayscale.min.js"></script>
-
-</body>
-
+		<!-- Contact Page -->
+		<section class="content hide para-text" id="contact">
+			<h1>Contact</h1>
+			<h5>Get in touch.</h5>
+			<p>Aroma 24/7<br/>
+			Email: <a href="mailto:info@aroma-247.com">info@aroma-247.com</a><br />
+				Phone: 123.456.7890<br />
+				Dubai<br />
+				United Arab Emirates</p>
+		</section>
+		
+		<!-- Background Slides -->
+		<div id="maximage">
+			<div>
+				<img src="/images/backgrounds/bg-img-1.jpg" alt="" />
+				<img class="gradient" src="/images/backgrounds/gradient.png" alt="" />
+			</div>
+			<div>
+				<img src="/images/backgrounds/bg-img-2.jpg" alt="" />
+				<img class="gradient" src="/images/backgrounds/gradient.png" alt="" />
+			</div>
+			<div>
+				<img src="/images/backgrounds/bg-img-3.jpg" alt="" />
+				<img class="gradient" src="/images/backgrounds/gradient.png" alt="" />
+			</div>
+			<div>
+				<img src="/images/backgrounds/bg-img-4.jpg" alt="" />
+				<img class="gradient" src="/images/backgrounds/gradient.png" alt="" />
+			</div>
+			<div>
+				<img src="/images/backgrounds/bg-img-5.jpg" alt="" />
+				<img class="gradient" src="/images/backgrounds/gradient.png" alt="" />
+			</div>
+		</div>
+		
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+		<script src="/js/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/js/jquery.fullscreen.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/js/jquery.ba-hashchange.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/js/main.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+			$(function(){
+				$('#maximage').maximage({
+					cycleOptions: {
+						fx: 'fade',
+						speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
+						timeout: 5000,
+						prev: '#arrow_left',
+						next: '#arrow_right',
+						pause: 0,
+						before: function(last,current){
+							if(!$.browser.msie){
+								// Start HTML5 video when you arrive
+								if($(current).find('video').length > 0) $(current).find('video')[0].play();
+							}
+						},
+						after: function(last,current){
+							if(!$.browser.msie){
+								// Pauses HTML5 video when you leave it
+								if($(last).find('video').length > 0) $(last).find('video')[0].pause();
+							}
+						}
+					},
+					onFirstImageLoaded: function(){
+						jQuery('#cycle-loader').hide();
+						jQuery('#maximage').fadeIn('fast');
+					}
+				});
+	
+				// Helper function to Fill and Center the HTML5 Video
+				jQuery('video,object').maximage('maxcover');
+	
+			});
+		</script>
+  </body>
 </html>

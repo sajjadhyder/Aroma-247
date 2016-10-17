@@ -1,0 +1,6 @@
+{
+  "name": "Aroma247",
+  "description": "A website for Aroma247",
+  "repository": "https://github.com/sajjadhyder/Aroma-247",
+  "keywords": ["node", "express", "static"],
+}
